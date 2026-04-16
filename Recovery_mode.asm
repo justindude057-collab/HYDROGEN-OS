@@ -24,27 +24,25 @@ jne jmpstart
 	mov ebx,1            ; File descriptor 1 - standard output
 	mov ecx,hello5        ; Put the offset of hello in ecx
 	mov edx,helloLen5  
-	int 80h
+
 	
 	
 		mov eax,4            ; The system call for write (sys_write)
 	mov ebx,1           ; File descriptor 1 - standard output
 	mov ecx,hello6        ; Put the offset of hello in ecx
 	mov edx,helloLen6 
-	int 80h
+
 	
 		mov eax,4            ; The system call for write (sys_write)
 	mov ebx,1            ; File descriptor 1 - standard output
 	mov ecx,hello7        ; Put the offset of hello in ecx
 	mov edx,helloLen7  
-	int 80h
+
 	
 			mov eax,4            ; The system call for write (sys_write)
 	mov ebx,1            ; File descriptor 1 - standard output
 	mov ecx,hello8        ; Put the offset of hello in ecx
-	mov edx,helloLen8  
-	int 80h
+	mov edx,helloLen8
 	jmpstart:
 		mov eax,1            ; The system call for exit (sys_exit)
 	mov ebx,0            ; Exit with return "code" of 0 (no error)
-  int 80h;
