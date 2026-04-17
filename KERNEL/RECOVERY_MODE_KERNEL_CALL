@@ -1,6 +1,6 @@
-mov ba, 0
+mov bx, 0
 mov br, 1
-Cmp br, ba
+Cmp rdi, rsp
 jne shit
 mov rsp, 1
 mov rdi, 1
