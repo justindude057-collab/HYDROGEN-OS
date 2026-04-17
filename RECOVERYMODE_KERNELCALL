@@ -1,0 +1,6 @@
+mov bx, 0
+mov bp, 1
+cmp bp, bx
+jne shit
+
+shit:
