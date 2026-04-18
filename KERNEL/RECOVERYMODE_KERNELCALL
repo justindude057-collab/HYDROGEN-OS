@@ -3,5 +3,5 @@ mov sp, 1
 Cmp dx, sp
 jne shit
 mov bx, 1
-mov ba, 1
+mov ax, 1
 shit:
