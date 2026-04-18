@@ -1,3 +1,6 @@
+section .text
+global _start
+_start:
 mov dx, 0
 mov sp, 1
 Cmp dx, sp
