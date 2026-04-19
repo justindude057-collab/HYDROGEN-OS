@@ -1,0 +1,33 @@
+0:  ab                      stos   DWORD PTR es:[edi],eax
+1:  0a 1c ba                or     bl,BYTE PTR [edx+edi*4]
+4:  ea a0 ee ee fc ac aa    jmp    0xaaac:0xfceeeea0
+b:  ce                      into
+c:  16                      push   ss
+d:  a0 ee ee fc ae          mov    al,ds:0xaefceeee
+12: ca ac e1                retf   0xe1ac
+15: 6a 0e                   push   0xe
+17: ee                      out    dx,al
+18: ef                      out    dx,eax
+19: ca cc aa                retf   0xaacc
+1c: ce                      into
+1d: 16                      push   ss
+1e: a0 ee ee fc ac          mov    al,ds:0xacfceeee
+23: aa                      stos   BYTE PTR es:[edi],al
+24: ce                      into
+25: 16                      push   ss
+26: a0 ee ee fc ac          mov    al,ds:0xacfceeee
+2b: aa                      stos   BYTE PTR es:[edi],al
+2c: ce                      into
+2d: 16                      push   ss
+2e: a0 ee ee fc ae          mov    al,ds:0xaefceeee
+33: ca ac e1                retf   0xe1ac
+36: 6a 0e                   push   0xe
+38: ee                      out    dx,al
+39: ef                      out    dx,eax
+3a: ca ca ac                retf   0xacca
+3d: e1 6a                   loope  0xa9
+3f: 0e                      push   cs
+40: ee                      out    dx,al
+41: ef                      out    dx,eax
+42: ca ca ac                retf   0xacca
+45: e1 6a                   loope  0xb1
