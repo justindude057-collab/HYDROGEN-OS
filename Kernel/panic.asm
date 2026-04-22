@@ -15,7 +15,7 @@ int 0x0e
 mov al, 'N'
 int 0x10
 int 0x0e
-mov al, 'E
+mov al, 'E'
 int 0x10
 int 0x0e
 mov al, 'L'
