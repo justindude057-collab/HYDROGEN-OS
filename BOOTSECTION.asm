@@ -7,7 +7,7 @@ mov ax, 0x1f00
 mov cx, 2000
 rep stosw
 
-;some shitty code going here.
+;some shitty code going here. -triangle
 
 mov ah, 0x0e
 mov Al, 'l'
