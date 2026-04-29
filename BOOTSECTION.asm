@@ -8,6 +8,70 @@ mov cx, 2000
 rep stosw
 
 mov ah, 0x0e
+mov Al, 'l'
+int 0x10
+mov Al, 'o'
+int 0x10
+mov Al, 'a'
+int 0x10
+mov Al, 'd'
+int 0x10
+mov Al, 'i'
+int 0x10
+mov Al, 'n'
+int 0x10
+mov Al, 'g'
+int 0x10
+mov Al, '_'
+int 0x10
+mov Al, 'O'
+int 0x10
+mov Al, 'S'
+int 0x10
+mov Al, '_'
+int 0x10
+mov Al, 'f'
+int 0x10
+mov Al, 'i'
+int 0x10
+mov Al, 'l'
+int 0x10
+mov Al, 'e'
+int 0x10
+mov Al, 's'
+int 0x10
+mov Al, '.'
+int 0x10
+mov Al, '.'
+int 0x10
+mov Al, '.'
+int 0x10
+mov Al, '.'
+int 0x10
+mov Al, '['
+int 0x10
+mov Al, 'O'
+int 0x10
+mov Al, 'K'
+int 0x10
+mov Al, ']'
+int 0x10
+
+mov Al, '.'
+int 0x10
+mov Al, '.'
+int 0x10
+mov Al, '.'
+int 0x10
+mov Al, '.'
+int 0x10
+
+mov al, 0x0D
+int 0x10
+mov al, 0x0A
+int 0x10
+
+mov ah, 0x0e
 mov Al, 'b'
 int 0x10
 mov Al, 'o'
