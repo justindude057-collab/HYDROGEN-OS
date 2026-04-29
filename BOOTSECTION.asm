@@ -57,14 +57,6 @@ int 0x10
 mov Al, ']'
 int 0x10
 
-mov Al, '.'
-int 0x10
-mov Al, '.'
-int 0x10
-mov Al, '.'
-int 0x10
-mov Al, '.'
-int 0x10
 
 mov al, 0x0D
 int 0x10
