@@ -3,9 +3,6 @@ syscall();
 return 0;}
 
 int syscall() {
-_asm_ ("cmp ah, bp"
-       "jne H:"
-        //interrupt code here
-        "H:");
+_asm_ (""); // im too lazy ti implement interupt here.
 return 0;}
 
