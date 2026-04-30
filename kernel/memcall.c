@@ -1,4 +1,4 @@
-;memoryprovider
+//memoryprovider
 int ERROROFALLOW() {
 //if mem allocation fails
 return 0;}
