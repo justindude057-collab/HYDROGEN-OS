@@ -1,14 +1,11 @@
 int main() {
+syscall()
 return 0;}
 
 int syscall() {
-_asm_[mov [syscall], bx
-cmp ah, bx
-jne H
-
-INT n
-
-IRET
-H:]
+_asm_ ("cmp ah, bp"
+       "jne H:"
+        //interrupt code here
+        "H:");
 return 0;}
 
