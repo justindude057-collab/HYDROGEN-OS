@@ -1,4 +1,4 @@
-#include <memcall.c>
+#include "memcall.h"
 int main(){
   
 return 0;}
