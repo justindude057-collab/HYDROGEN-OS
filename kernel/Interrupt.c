@@ -1,5 +1,5 @@
 int main() {
-syscall()
+syscall();
 return 0;}
 
 int syscall() {
