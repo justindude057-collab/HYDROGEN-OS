@@ -1,8 +1,8 @@
 #include "intterupt.h"
 #include "memcall.h"
 
-#ifndef intterupt_H  
-#define intterupt_H
+#ifndef Krnlcall_H  
+#define Krnlcall_H
 int memcall;
 memcall = 0;
 if (memcall == 1){
