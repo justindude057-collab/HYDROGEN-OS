@@ -6,6 +6,13 @@ xor di, di
 mov ax, 0x1f00
 mov cx, 2000
 
+mov ah, 0x0e
+bootidentify db "BOOTLOADER."
+mov [bootidentify], al
+int 0x10
+
+
+
 mov ah, 0x0E
 mov Al, '#'
 int 0x10
