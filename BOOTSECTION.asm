@@ -21,6 +21,9 @@ int 0x10
 NOENTER:
 ;print
 
+
+mov ah, 0x0e
+mov al, [title]
     int 0x10        
     inc al            
 title db "Kernaline os bootloader.", 0
