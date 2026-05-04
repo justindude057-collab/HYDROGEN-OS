@@ -1,11 +1,5 @@
 org 0x7C00
 ;16 bit 
-mov ax, 0xb800
-mov es, ax
-xor di, di
-mov ax, 0x1f00
-mov cx, 2000
-rep stosw
 
 title db"Kernaline os bootloader.", 10
 mov ah, 0x0e
