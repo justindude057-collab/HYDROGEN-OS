@@ -22,12 +22,10 @@ int 0x10
 NOENTER:
 ;print
 
-start:
     lodsb             
     or al, al        
-    int 0x10           
-jmp start
+    int 0x10          
 title db "Kernaline os bootloader.", 0
-Jmp $
+Jmp start
 Times 510 db 0
 db 0x55, 0xaa 
