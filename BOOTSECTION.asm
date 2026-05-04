@@ -1,8 +1,8 @@
 org 0x7C00
 ;16 bit 
 
-title db"Kernaline os bootloader.", 10
-mov [title], al
+mov ah, 0x0e
+mov al, [title]
 
 start:
 cmp ah, 1Ch
@@ -20,11 +20,10 @@ mov Al, ':'
 int 0x10
 NOENTER:
 ;print
-mov ah, 0x0e
-inc al
-int 0x10
 
-
+    int 0x10        
+    inc al            
+title db "Kernaline os bootloader.", 0
 
 jmp start
 
