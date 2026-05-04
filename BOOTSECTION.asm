@@ -20,11 +20,10 @@ NOENTER:
 
 
 mov ah, 0x0e
-mov al, [title]
-    int 0x10        
+mov al, [title]       
     inc al            
-title db "Kernaline os bootloader.", 0
-
+title db "Kernaline os bootloader.", 10
+    int 0x10 
 jmp start
 
 Jmp $
