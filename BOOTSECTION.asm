@@ -12,7 +12,6 @@ start:
     jz halt
     jnz nohlt 
     int 0x10           
-Jmp start
 
 title db "Kernaline os bootloader.", 0 
 
@@ -21,13 +20,13 @@ title db "Kernaline os bootloader.", 0
     mov si, select    
     mov ah, 0x0e       
 
-A:
+
     lodsb              
     or al, al       
     jz halt            
     jnz nohlt 
     int 0x10           
-Jmp A
+Jmp start
 
 
 select db "select a drive..", 0 
