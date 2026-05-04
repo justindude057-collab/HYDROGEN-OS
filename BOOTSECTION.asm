@@ -1,7 +1,7 @@
 org 0x7C00
 ;16 bit 
 
-
+;i hate evey fucking bit of this asm code.
     mov si, title      
     mov ah, 0x0e
 
