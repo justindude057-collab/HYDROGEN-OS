@@ -7,6 +7,12 @@ mov ax, 0x1f00
 mov cx, 2000
 rep stosw
 
+title db"Kernaline os bootloader.", 10
+mov ah, 0x0e
+mov [title], al
+inc al
+int 0x10
+
 start:
 cmp ah, 1Ch
 Jz NOENTER
