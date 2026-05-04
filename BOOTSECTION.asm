@@ -6,27 +6,8 @@ xor di, di
 mov ax, 0x1f00
 mov cx, 2000
 rep stosw
-mov ah, 0x0e
-bootidentify db "BOOTLOADER."
-mov [bootidentify], al
-int 0x10
-
-
-
-mov ah, 0x0E
-mov Al, '#'
-int 0x10
-mov Al, ':'
-int 0x10
 
 start:
-mov ah, 0
-Int 0x16
-mov ah, 0x0E
-int 0x10
-
-mov ah, 0
-Int 16h
 cmp ah, 1Ch
 Jz NOENTER
 
