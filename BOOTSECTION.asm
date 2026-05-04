@@ -1,9 +1,6 @@
 org 0x7C00
 ;16 bit 
 
-mov ah, 0x0e
-mov al, [title]
-
 start:
 cmp ah, 1Ch
 Jz NOENTER
