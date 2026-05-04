@@ -18,7 +18,7 @@ hlt
 
 title db "Kernaline os bootloader.", 0 
 
-asm 
+
 
     mov si, select    
     mov ah, 0x0e       
