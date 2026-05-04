@@ -13,6 +13,9 @@ start:
     int 0x10           
 Jmp start
 
+halt:
+hlt
+
 title db "Kernaline os bootloader.", 0 
 
 Times 510 db 0
