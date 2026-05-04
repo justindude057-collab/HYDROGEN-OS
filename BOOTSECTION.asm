@@ -9,12 +9,10 @@ org 0x7C00
 start:
     lodsb              
     or al, al       
-    jz halt            
+    jz halt
+    jnz nohlt 
     int 0x10           
 Jmp start
-
-halt:
-hlt
 
 title db "Kernaline os bootloader.", 0 
 
@@ -27,12 +25,16 @@ A:
     lodsb              
     or al, al       
     jz halt            
+    jnz nohlt 
     int 0x10           
 Jmp A
 
 
 select db "select a drive..", 0 
 
+halt:
+hlt
+nohlt:
 
 Times 510 db 0
 db 0x55, 0xaa 
